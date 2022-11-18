@@ -19,6 +19,11 @@ resource "aws_instance" "web" {
   instance_type = "t3.nano"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "HelloWorld-tf-practice-hs"
+    Confidentiality = "C2"
+    Author = "hemanshu.solanki@vodafone.com"
+    TaggingVersion = "v2.3"
+    Environment = "SANDBOX"
+    ProjectName = "tf-practice-hs"
   }
 }
